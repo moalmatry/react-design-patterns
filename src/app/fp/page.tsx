@@ -1,3 +1,4 @@
+import { BigSuccessButton, DangerButton } from "@/components/composition";
 import RecursiveComponent from "@/components/RecursiveComponent";
 import React from "react";
 type Address = {
@@ -60,12 +61,12 @@ const user: User = {
   },
 };
 
-console.log(user);
-
 export default function Page() {
   return (
     <div>
-      <RecursiveComponent data={user} />
+      {/* <RecursiveComponent data={user} /> */}
+      <DangerButton text="Test Button" />
+      <BigSuccessButton text="Test Button" />
     </div>
   );
 }
